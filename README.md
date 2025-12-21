@@ -15,6 +15,13 @@ This project was completed in five core steps:
 4. **Hash Computation:** Integration of the message schedule and compression loop to build the full hashing function, validated against the standard hashlib library.
 5. **Security Analysis:** A practical investigation into password security, using Rainbow Tables to successfully reverse hashes and demonstrate the vulnerability of unsalted passwords.
 
+## Code Quality & Linting
+This project is linted and formatted using [Ruff](https://docs.astral.sh/ruff/), the modern standard for Python code quality.
+- Ruff was selected over legacy tools like [Flake8](https://flake8.pycqa.org/en/latest/) specifically for its superior handling of Jupyter Notebooks.
+    - **Native .ipynb Support:** Unlike [Flake8](https://flake8.pycqa.org/en/latest/) which requires wrapper tools like [nbqa](https://nbqa.readthedocs.io/en/latest/) to parse a notebook, Ruff natively understands the cell structure of Jupyter notebooks.
+    - **Context Aware:** Ruff minimizes false positives by understanding the difference between notebook cells and standard script files, ignoring issues that arise from scripting within a .ipynb notebook.
+        - If you attempt to lint this notebook with [Flake8](https://flake8.pycqa.org/en/latest/) you may encounter errors that are ill-suited for .ipynb notebooks, as [Flake8](https://flake8.pycqa.org/en/latest/) lacks context.
+
 ## Requirements
 This project relies on [hashlib](https://docs.python.org/3/library/hashlib.html) for validation, comparing the output of my custom implementation against the standard library.
 Upon testing, [hashlib](https://docs.python.org/3/library/hashlib.html) behavior may vary across environments. To ensure this notebook and its implementation work exactly as expected, please use ``Python 3.12.5``.
@@ -45,7 +52,7 @@ jupyter notebook
     - Open ``problems.ipynb`` from the interface and run all cells sequentially from top to bottom.
 
 ## References
-All refrences are mentioned inline or in markdown at [problems.ipynb](problems.ipynb) to provide the context in which they are used in.
+All references are mentioned inline or in markdown at [problems.ipynb](problems.ipynb) to provide the context in which they are used in.
 
 - [Unittest](https://docs.python.org/3/library/unittest.html)
 - [Type aliases](https://docs.python.org/3/library/typing.html)
