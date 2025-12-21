@@ -32,23 +32,40 @@ This project uses the following dependencies:
 - **External Libraries:** numpy
 
 ### How To Run
+**It is recommended to run this project in a virtual environment to avoid dependency conflicts.**
+
 1. Clone this repository
 ````
 git clone https://github.com/KarolisBz/computational-theory-assessment-G00417529.git
 cd computational-theory-assessment-G00417529
 ````
 
-2. Install dependencies
+2. Create and Activate a Virtual Environment <br>
+*Run the following commands based on your operating system:*
+
+Windows PowerShell:
 ````
-pip install numpy notebook
+python -m venv venv
+.\venv\Scripts\activate
 ````
 
-3. Launch Jupyter notebook
+macOS/Linux:
 ````
-jupyter notebook
+python3 -m venv venv
+source venv/bin/activate
 ````
 
-4. Execute the Project
+3. Install dependencies
+````
+python -m pip install numpy notebook
+````
+
+4. Launch Jupyter notebook
+````
+python -m jupyter notebook
+````
+
+5. Execute the Project
     - Open ``problems.ipynb`` from the interface and run all cells sequentially from top to bottom.
 
 ## References
