@@ -78,3 +78,4 @@ All references are mentioned inline or in markdown at [problems.ipynb](problems.
 - [numpy.floor](https://numpy.org/devdocs/reference/generated/numpy.floor.html)
 - [All() Built in function](https://docs.python.org/3/library/functions.html)
 - [Docstring Conventions](https://peps.python.org/pep-0257/)
+- [Metaprogramming](https://www.python.org/doc/essays/metaclasses/).
